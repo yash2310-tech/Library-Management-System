@@ -1,0 +1,147 @@
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Library Dashboard</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            padding: 40px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+        }
+
+        h1 {
+            color: white;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            color: white;
+            text-align: center;
+            margin-bottom: 35px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 18px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+
+        .card h2 {
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .card p {
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 25px;
+            background: #667eea;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+        }
+
+        .btn:hover {
+            background: #5568d9;
+        }
+
+        .logout {
+            display: block;
+            width: 150px;
+            margin: 30px auto 0;
+            text-align: center;
+            padding: 12px;
+            background: #333;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>📚 Library Management System</h1>
+
+    <p class="subtitle">
+        Welcome to your Library Dashboard
+    </p>
+
+    <div class="cards">
+
+        <div class="card">
+            <h2>📖 Books</h2>
+            <p>Manage library books</p>
+            <a href="books" class="btn">View Books</a>
+        </div>
+
+        <div class="card">
+            <h2>➕ Add Book</h2>
+            <p>Add a new book to library</p>
+            <a href="addbook.html" class="btn">Add Book</a>
+        </div>
+
+        <div class="card">
+            <h2>👨‍🎓 Students</h2>
+            <p>Manage students</p>
+            <a href="student" class="btn">Students</a>
+            <br><br>
+            <a href="addstudent.html" class="btn">➕ Add Student</a>
+        </div>
+
+        <div class="card">
+            <h2>📤 Issue Book</h2>
+            <p>Issue a book to student</p>
+            <a href="issueBook" class="btn">Issue Book</a>
+        </div>
+
+        <div class="card">
+            <h2>📚 Issued Books</h2>
+            <p>View all issued books</p>
+            <a href="issuedBooks" class="btn">View Issued Books</a>
+        </div>
+        <div class="card">
+            <h2>🔄 Return Book</h2>
+            <p>Return an issued book</p>
+            <a href="returnBook" class="btn">Return Book</a>
+        </div>
+
+    </div>
+
+    <a href="login.html" class="logout">Logout</a>
+
+</div>
+
+</body>
+</html>
+```
